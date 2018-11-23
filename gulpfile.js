@@ -1,8 +1,8 @@
 global.destDir = './dist';
 global.srcDir = './src';
 
-const 
-  
+const
+
   gulp        = require('gulp'),
   browserSync = require('browser-sync').create()
 
