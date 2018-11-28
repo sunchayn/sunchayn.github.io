@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "i'm full stack web developer from tunisia",
   "keywords": [
-    "protfolio", "developer", "website"
+    "protfolio",
+    "developer",
+    "website"
   ],
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -22,7 +24,11 @@
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-style-inject": "^0.1.1",
     "gulp-uglify": "^3.0.1",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^2.2.1",
     "source": "0.0.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-paths": "^2.1.0",

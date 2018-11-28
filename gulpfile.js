@@ -3,13 +3,16 @@ global.srcDir = './src';
 
 const
 
-  gulp        = require('gulp'),
-  browserSync = require('browser-sync').create()
+  gulp          = require('gulp'),
+  browserSync   = require('browser-sync').create(),
+  del           = require('del'),
+  // sequence      = require('gulp-sequence'),
+  sequence   = require('run-sequence'),
 
-  buildSASS   = require('./tasks/build/sass'),
-  buildJS     = require('./tasks/build/js'),
-  buildHTML   = require('./tasks/build/html'),
-  buildStatic = require('./tasks/build/static')
+  buildSASS     = require('./tasks/build/sass'),
+  buildJS       = require('./tasks/build/js'),
+  buildHTML     = require('./tasks/build/html'),
+  buildStatic   = require('./tasks/build/static')
 
   exportJS      = require('./tasks/export/js'),
   exportHTML    = require('./tasks/export/html'),
@@ -35,14 +38,27 @@ gulp.task('build:js', buildJS);
 gulp.task('build:html', buildHTML);
 gulp.task('build:static', buildStatic);
 
+
 gulp.task('build', function() {
-  buildSASS();
-  buildJS();
-  buildHTML();
-  buildStatic();
+  del([global.destDir + '/**/*']).then(function() {
+    sequence('build:sass', 'build:js', 'build:static', 'build:html');
+  });
 });
 
+// gulp.task('test:production', function() {
+//   browserSync.init({
+//     server: {
+//       baseDir: ['./'],
+//     },
+//     notify: false,
+//     ui: false,
+//     open: false,
+//     injectChanges: true,
+//   });
+// });
+
 gulp.task('serve', ['build'], function () {
+
   browserSync.init({
     server: {
       baseDir: ['./dist/'],
@@ -60,15 +76,17 @@ gulp.task('serve', ['build'], function () {
 });
 
 gulp.task('reload:sass', function () {
-  buildSASS().on('end', function() {
-    browserSync.reload();
+  buildSASS().resume().on('end', function() {
+    gulp.start('reload:html');
   });
 });
 
 gulp.task('reload:js', function () {
-  buildJS().on('end', function() {
-    browserSync.reload();
-  });
+    buildJS().pipe(browserSync.reload({ stream: true }));
+
+  // buildJS().pipe(browserSync.reload({ stream: true})).on('end', function() {
+  //   browserSync.reload();
+  // });
 });
 
 gulp.task('reload:html', function () {
