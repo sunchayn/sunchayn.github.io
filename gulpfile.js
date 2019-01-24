@@ -6,8 +6,7 @@ const
   gulp          = require('gulp'),
   browserSync   = require('browser-sync').create(),
   del           = require('del'),
-  // sequence      = require('gulp-sequence'),
-  sequence   = require('run-sequence'),
+  sequence      = require('run-sequence'),
 
   buildSASS     = require('./tasks/build/sass'),
   buildJS       = require('./tasks/build/js'),
@@ -45,18 +44,6 @@ gulp.task('build', function() {
   });
 });
 
-// gulp.task('test:production', function() {
-//   browserSync.init({
-//     server: {
-//       baseDir: ['./'],
-//     },
-//     notify: false,
-//     ui: false,
-//     open: false,
-//     injectChanges: true,
-//   });
-// });
-
 gulp.task('serve', ['build'], function () {
 
   browserSync.init({
@@ -83,10 +70,6 @@ gulp.task('reload:sass', function () {
 
 gulp.task('reload:js', function () {
     buildJS().pipe(browserSync.reload({ stream: true }));
-
-  // buildJS().pipe(browserSync.reload({ stream: true})).on('end', function() {
-  //   browserSync.reload();
-  // });
 });
 
 gulp.task('reload:html', function () {
