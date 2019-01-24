@@ -1,38 +1,54 @@
 
+/**
+ * Menu
+ *
+ * This class is responsible for handiling the responsivness and style of the Menu
+ */
+
 class Menu {
+
   constructor(menuHolder, slidesClass) {
     this.menu = menuHolder;
     this.slides = document.querySelectorAll(slidesClass);
 
     this.navbar = this.menu.querySelector('.navbar');
 
+    // Initilize the menu
     this._init();
   }
 
+  /**
+   * Initilization
+   */
   _init() {
     
+    // Set the appropriate top padding for the page based on navbar height
     this._adaptNavHeight();
 
+    // Register the resize event
     window.addEventListener('resize', this._adaptNavHeight.bind(this));
+    
+    // Handle the mobile sidemenu initialization
     this._initSideMenu();
-    // this._events();
   }
 
+  /**
+   * Set the appropriate top padding for the page based on navbar height
+   */
   _adaptNavHeight() {
+
     this.menuHeight = this.menu.clientHeight;
 
     this.slides.forEach(function(ele) {
       ele.style.paddingTop = this.menuHeight + 'px';
       ele.style.paddingBottom = this.menuHeight  + 'px';
     }.bind(this));
+  
   }
 
-  _events() {
-    this.menu.addEventListener('mouseover', function() {
-      this.classList.remove('navbar--collapsed');
-    });
-  }
-
+  /**
+   * Handle the mobile sidemenu initialization
+   */
   _initSideMenu() {
     this.sidemenu = document.querySelector('.mobile-menu');
     this.overlay = document.querySelector('.overlay');
@@ -49,7 +65,7 @@ class Menu {
     }.bind(this));
   }
 
-  _toggleSideMenu(sidemenu, overlay) {
+  _toggleSideMenu(sidemenu) {
 
     if (sidemenu.classList.contains('open')) {
       this.overlay.classList.add('active');
@@ -60,12 +76,12 @@ class Menu {
     }
   }
 
-  _openSideMenu(sidemenu, overlay) {
+  _openSideMenu() {
     this.overlay.classList.add('active');
     this.sidemenu.classList.add('open');
   }
 
-  closeSideMenu(sidemenu, overlay) {
+  closeSideMenu() {
     this.overlay.classList.remove('active');
     this.sidemenu.classList.remove('open');
   }

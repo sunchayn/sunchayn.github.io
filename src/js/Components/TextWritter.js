@@ -1,3 +1,8 @@
+/**
+ * TextWritter
+ *
+ * This class is responsible for enabling Text writter animation
+ */
 
 class TextWritter {
   constructor(target, pointer, callback) {
@@ -16,7 +21,6 @@ class TextWritter {
     const pointerWrapper = document.createElement('span');
     textWrapper.innerText = this.content[0];
     pointerWrapper.innerText = this.pointer;
-    // this.target.innerHTML = "";
     this.target.appendChild(textWrapper);
     this.target.appendChild(pointerWrapper);
 

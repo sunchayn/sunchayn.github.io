@@ -1,3 +1,8 @@
+/**
+ * TextAnimator
+ *
+ * This class is responsible for animating text in the page
+ */
 
 class TextAnimator {
   constructor(animationPattern = ['\\', '/', '-']) {

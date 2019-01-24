@@ -65,7 +65,7 @@ import KeyboardBinder from './Components/KeyboardBinder.js';
         delay: 200,
         interval: 200,
         afterReveal: function (el) {
-          if (el.classList.contains('js-signature')) {
+          if (el.classList.contains('js-signature') && el.nodeName !== "IMG") {
             el.contentDocument.getElementById('signature').classList.add('start');
           }
         }
