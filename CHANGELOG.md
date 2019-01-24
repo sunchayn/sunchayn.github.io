@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.2.1] - 2019-01-24
+### Added
+- Source files
+### Changed
+- Favicons
+- Mobile menu direction
+
 ## [0.2.0] - 2018-11-28
 ### Added
 - Keyboard friendly experience
@@ -7,7 +14,7 @@
 ### Changed
 - Typography (font families, sizes)
 - Enhanced the layout a little bit
-- Add More Articles button to the blog section
+- Add "More Articles" button to the blog section
 - Reformulate the textual content
 - Make the green text glowing ( in the hero section )
 - Make the signature self-drawing
