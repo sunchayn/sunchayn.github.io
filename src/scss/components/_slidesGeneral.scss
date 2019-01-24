@@ -1,0 +1,17 @@
+// .slide-wrapper {
+//   color: default;
+// }
+
+.slide-wrapper {
+  margin-top: $large-margin * 3;
+  margin-bottom: $large-margin * 3;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  
+  .slide-wrapper {
+    margin-top: $large-margin * 4;
+    margin-bottom: $large-margin * 4;
+  }
+
+}

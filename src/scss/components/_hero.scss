@@ -1,0 +1,107 @@
+.hero {
+}
+
+.hero-name {
+  color: $color-white;
+  margin: 0;
+
+  font-size: $hero-name-size-mobile
+}
+
+.hero-post {
+  color: $color-white;
+  margin: 0;
+
+  font-family: $body-font;
+  font-size: $hero-post-size-mobile;
+  color: $color-green;
+  text-shadow: 0 0 5px rgba($color-green, .5);
+  visibility: hidden;
+}
+
+.hero-desc {
+  color: $color-white;
+  margin: 0;
+
+  font-size: $hero-desc-size-mobile;
+  line-height: 1.5;
+  font-weight: 300;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  
+  .hero-name {
+    font-size: $hero-name-size-desktop;
+  }
+
+  .hero-post {
+    font-size: $hero-post-size-desktop;
+  }
+
+  .hero-desc {
+    font-size: $hero-desc-size-desktop;
+  }
+
+  .hero-name-breaker {
+    display: none;
+  }
+
+}
+.keyboard-xp-hint{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+
+  & > i.icon {
+    z-index: 444;
+    display: inline-block;
+    font-size: 2em;
+    color: $color-white;
+    margin: 0;
+    opacity: 0.9;
+    transition: opacity 200ms ease;
+    &:hover {
+
+      opacity: 1;
+
+      & + .keyboard-xp-hint-content{
+        opacity: 1;
+      }
+
+    }
+  }
+}
+
+.keyboard-xp-hint-content {
+  max-width: 300px;
+  min-width: 300px;
+  background-color: rgba($color-white, 1);
+  opacity: 0;
+  transition: opacity 300ms ease;
+  padding: $padding;
+  position: absolute;
+  bottom: 105%;
+  right: 0;
+
+  &>h3, &>p {
+    margin-top: 0;
+    margin-bottom: $slim-margin;
+    vertical-align: middle;
+  }
+
+}
+
+#beta {
+  font-weight: 300;
+  color: $color-red;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  .keyboard-xp-hint {
+
+    display: inline-block;
+  }
+}

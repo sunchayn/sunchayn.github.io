@@ -1,7 +1,4 @@
 /.cache/
 /.env
 /vendor/
-/dist/
-/src/
-/tasks/
 /node_modules/
