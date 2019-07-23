@@ -2,3 +2,5 @@
 /.env
 /vendor/
 /node_modules/
+/src
+/dist
