@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Monetize.js",
+    "title_note": "1st prize winner",
+    "title_note_desc": "Won Grant for the Web Hackathon.",
+    "description": "An event-driven library to manage and simulate Web Monetization.",
+    "skills": [
+      "Javascript",
+      "Jest",
+      "Webpack"
+    ],
+    "thumbnail": "side/monetize-js.png",
+    "links": {
+      "github": "https://github.com/sunchayn/monetize.js"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Received",
+    "description": "A platform that enable people to reserve a storage space and create a public gateway to receives files from their friends, co-worker or themselves.",
+    "skills": [
+      "Laravel",
+      "VueJS",
+      "TDD",
+      "SCSS",
+      "Twillio API"
+    ],
+    "thumbnail": "side/received.png",
+    "links": {
+      "github": "https://github.com/sunchayn/received"
+    }
+  }
+]

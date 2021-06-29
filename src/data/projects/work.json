@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Oriapi",
+    "role": "Full-stack web developer",
+    "company": "ALINAOUS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis possimus! Fugit molestiae nam nemo nihil perferendis, qui suscipit? Accusantium alias dicta distinctio, exercitationem incidunt inventore iste laboriosam vel voluptatem.",
+    "skills": [
+      "Laravel",
+      "Vonage",
+      "TDD",
+      "OpenAPI",
+      "Stripe"
+    ],
+    "thumbnail": "work/oribiky.png"
+  },
+
+  {
+    "id": 2,
+    "title": "Oridash",
+    "role": "Full-stack web developer",
+    "company": "ALINAOUS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis possimus! Fugit molestiae nam nemo nihil perferendis, qui suscipit? Accusantium alias dicta distinctio, exercitationem incidunt inventore iste laboriosam vel voluptatem.",
+    "skills": [
+      "Laravel",
+      "VueJS",
+      "Tailwind CSS",
+      "SCSS",
+      "Apex Charts"
+    ],
+    "thumbnail": "work/oribiky.png"
+  }
+]

@@ -1,0 +1,32 @@
+/**
+ * These breakpoints are for mobile first approach
+ * X-breakpoint is meant for devices that are bigger than the defined width.
+ */
+$sm-breakpoint  : 576px;
+$md-breakpoint  : 768px;
+$lg-breakpoint  : 992px;
+$xl-breakpoint  : 1200px;
+
+@mixin small() {
+  @media only screen and (min-width: $sm-breakpoint) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media only screen and (min-width: $md-breakpoint) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media only screen and (min-width: $lg-breakpoint) {
+    @content;
+  }
+}
+
+@mixin extraLarge() {
+  @media only screen and (min-width: $xl-breakpoint) {
+    @content;
+  }
+}

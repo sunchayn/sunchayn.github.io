@@ -1,0 +1,10 @@
+@import 'utils/all';
+
+@tailwind base;
+
+@import 'base';
+
+@import 'components/all';
+
+@tailwind components;
+@tailwind utilities;

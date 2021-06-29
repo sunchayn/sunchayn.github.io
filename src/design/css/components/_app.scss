@@ -1,0 +1,20 @@
+.app {
+  @apply min-h-screen max-h-screen;
+}
+
+.app__wrapper > .container {
+  @apply flex flex-col h-full;
+}
+
+.app__content {
+  @apply flex-1;
+}
+
+.app__slide {
+  @apply flex flex-col justify-center;
+  min-height: calc(100vh - 3rem);
+}
+
+.app__slide__content {
+  @apply py-32;
+}

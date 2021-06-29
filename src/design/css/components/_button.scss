@@ -1,0 +1,11 @@
+.button {
+  @apply inline-block py-1 px-3 border-2 border-white bg-transparent outline-none text-sm capitalize;
+
+  &:hover {
+    @apply border-green;
+  }
+
+  &:active, &:focus {
+    @apply underline;
+  }
+}

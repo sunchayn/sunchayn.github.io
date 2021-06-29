@@ -1,0 +1,52 @@
+body {
+  @apply text-left font-normal not-italic leading-normal font-body bg-surface-background text-on-surface-body;
+  font-size: var(--typescales-mobile-base);
+
+  @include medium {
+    font-size: var(--typescales-mobile-base);
+  }
+}
+
+a {
+  @apply transition-colors;
+}
+
+a:hover {
+  @apply no-underline text-pink;
+}
+
+p {
+  @apply mb-4 max-w-2xl;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-heading text-on-surface-heading;
+}
+
+h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+small {
+  @apply text-xs;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-pink;
+}
