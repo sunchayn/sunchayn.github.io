@@ -11,6 +11,8 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@vueuse/head": "^0.6.0",
     "core-js": "^3.6.5",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "lodash": "^4.17.21",
     "prerender-spa-plugin": "^3.4.0",
     "scrollreveal": "^4.0.9",

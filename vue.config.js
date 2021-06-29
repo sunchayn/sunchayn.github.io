@@ -2,6 +2,8 @@ const autoprefixer = require('autoprefixer')
 const tailwindcss = require('tailwindcss')
 const path = require('path')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+const imageminMozjpeg = require('imagemin-mozjpeg')
 
 module.exports = {
   lintOnSave: false,
@@ -32,6 +34,20 @@ module.exports = {
         staticDir: path.join(__dirname, 'dist'),
         // Required - Routes to render.
         routes: ['/'],
+      }),
+
+      new ImageminPlugin({
+        disable: process.env.NODE_ENV !== 'production', // Disable during development
+        pngquant: {
+          quality: '95-100',
+        },
+
+        plugins: [
+          imageminMozjpeg({
+            quality: 70,
+            progressive: true,
+          }),
+        ],
       }),
     ],
   },
