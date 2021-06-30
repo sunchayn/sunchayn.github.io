@@ -3,8 +3,8 @@
   "version": "3.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "cross-env TAILWIND_MODE=watch vue-cli-service serve",
+    "build": "vue-cli-service build && mv ./dist/404/index.html ./dist/404.html && rm -r ./dist/404",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@vueuse/head": "^0.6.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.3",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "lodash": "^4.17.21",
