@@ -1,5 +1,5 @@
 .button {
-  @apply inline-block py-1 px-3 border-2 border-white bg-transparent outline-none text-sm capitalize;
+  @apply inline-flex items-start py-1 px-3 border-2 border-white bg-transparent outline-none text-sm capitalize;
 
   &:hover {
     @apply border-green;
@@ -8,4 +8,16 @@
   &:active, &:focus {
     @apply underline;
   }
+}
+
+.button--link{
+  @apply p-0 border-0 bg-transparent shadow-none cursor-pointer;
+
+  &:active, &:focus {
+    @apply shadow-none underline outline-none;
+  }
+}
+
+.button--icon {
+  @apply p-[.2rem] border-gray-600;
 }

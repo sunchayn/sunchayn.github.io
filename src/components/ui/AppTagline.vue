@@ -4,7 +4,7 @@
     :class="{'is-reversed': reversed}"
   >
     <div class="tagline__line" />
-    <strong class="font-body text-current text-sm uppercase tracking-wide m-0 transform rotate-180">
+    <strong class="font-body text-current text-xs lg:text-sm uppercase tracking-wide m-0 transform rotate-180">
       {{ content }}
     </strong>
   </div>

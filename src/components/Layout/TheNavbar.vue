@@ -1,11 +1,20 @@
 <template>
   <nav class="navbar">
     <div class="container max-w-5xl">
-      <div class="page-name">
+      <button
+        class="md:hidden button button--icon"
+        @click="$emit('toggleSidebar')"
+      >
+        <i class="icon text-current mr-0">
+          <MenuIcon />
+        </i>
+      </button>
+
+      <div class="ml-auto md:ml-0 page-name">
         ~/<span class="page-name__label">{{ currentSlide }}</span>$
       </div>
 
-      <div class="ml-auto space-x-4">
+      <div class="hidden md:block ml-auto space-x-4">
         <span>[&nbsp;<a
           href="https://github.com/sunchayn"
           target="_blank"
@@ -20,7 +29,15 @@
 </template>
 
 <script>
+import { MenuIcon } from '@heroicons/vue/outline'
+
 export default {
+  components: {
+    MenuIcon,
+  },
+
+  emits: ['toggleSidebar'],
+
   data() {
     return {
       currentSlide: 'hello-world',
@@ -40,20 +57,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "src/design/css/utils/all";
+
 .navbar {
   @apply
-    fixed
+    fixed top-0
     z-20
-    top-0
     bg-black
 
+    w-full
     text-sm
   ;
 
   backdrop-filter: blur(2px);
   --tw-bg-opacity: .6;
 
-  width: calc(100% - 16rem - 1px);
+  @include medium {
+    width: calc(100% - 13rem - 1px);
+  }
+
+  @include large {
+    width: calc(100% - 16rem - 1px);
+  }
 
   & > .container {
     @apply

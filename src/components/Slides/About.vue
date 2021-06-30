@@ -1,32 +1,32 @@
 <template>
   <div class="app__slide">
     <div class="app__slide__content">
-      <div class="mb-4 leading-none">
+      <div class="mb-4 leading-none sr-hook">
         <h2>About Me</h2>
         <span class="text-xs">Me, my mindset and how I approach things</span>
       </div>
 
-      <div class="flex">
-        <div class="min-w-[40%]">
+      <div class="md:flex">
+        <div class="min-w-[40%] mb-4 md:mb-0 mr-4 lg:mr-0">
           <div class="relative">
             <div
               v-lazy:background-image="require('@/assets/headshot.jpg')"
-              class="z-10 bg-red aspect-w-4 aspect-h-5 w-full bg-cover bg-center"
+              class="z-10 bg-red aspect-w-4 aspect-h-5 w-full bg-cover bg-center sr-hook"
             />
 
             <div
-              class="about__circle"
+              class="about__circle sr-hook"
               :class="circleColorClass"
             />
           </div>
         </div>
 
-        <div class="w-24 flex justify-center items-start">
+        <div class="w-24 hidden lg:flex justify-center items-start sr-hook">
           <AppTagline />
         </div>
 
-        <div class="w-flex text-on-surface-subdued">
-          <small class="block mb-1">36s Read time<br>&middot;</small>
+        <div class="relative z-10 text-on-surface-subdued">
+          <small class="block mb-1 sr-hook">36s Read time<br>&middot;</small>
           <p class="sr-hook">
             Hi! I’m <strong class="text-white">Mazen Touati</strong>. I’m a full-stack web developer from Tunisia. My passion for code started years ago when I wrote my first line of code back in <strong class="text-white">2011</strong>.
           </p>
@@ -89,14 +89,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "src/design/css/utils/all";
+
 .about__circle {
   @apply
-    absolute bottom-0 left-0
-    transform -translate-x-10 translate-y-10
+    absolute top-0 right-0
+    transform translate-x-10 -translate-y-10
     bg-white w-20 h-20 rounded-full
   ;
 
   transition: background-color 3s ease-in-out;
+
+  @include medium {
+    @apply bottom-0 left-0 -translate-x-10 translate-y-10;
+    right: initial;
+    top: initial;
+  }
 
   &.is-blue {
     @apply bg-blue;

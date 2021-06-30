@@ -1,11 +1,27 @@
 <template>
-  <aside class="sidebar flex flex-col">
-    <div class="h-12" />
+  <aside
+    class="sidebar flex flex-col"
+    :class="{'is-toggled': toggled}"
+  >
+    <div class="flex items-center min-h-[3rem] px-8">
+      <button
+        class="button button--link text-xs text-white md:hidden"
+        @click="close"
+      >
+        <i
+          class="icon text-current"
+        >
+          <ArrowNarrowLeftIcon />
+        </i>
+        Dismiss
+      </button>
+    </div>
     <div class="flex-1 flex flex-col p-8">
       <small
         class="open-to-work capitalize cursor-pointer"
         @click="$emit('slideTo', 'contact')"
       >open to work</small>
+
       <nav class="sidebar__menu flex-1 overflow-y-auto">
         <button
           type="button"
@@ -36,6 +52,18 @@
         </button>
       </nav>
 
+
+      <div class="md:hidden mb-4 space-x-4">
+        <span>[&nbsp;<a
+          href="https://github.com/sunchayn"
+          target="_blank"
+        >github</a>&nbsp;]</span>
+        <span>[&nbsp;<a
+          href="https://dev.to/mazentouati"
+          target="_blank"
+        >blog</a>&nbsp;]</span>
+      </div>
+
       <div class="flex flex-col">
         <p class="text-on-surface-dimmed leading-none font-bold text-lg">
           honest<br>innovative &<br>minimalistic
@@ -51,12 +79,21 @@
 </template>
 
 <script>
+import {
+  ArrowNarrowLeftIcon,
+} from '@heroicons/vue/outline'
+
 export default {
+  components: {
+    ArrowNarrowLeftIcon,
+  },
+
   emits: ['slideTo'],
 
   data() {
     return {
       currentSlide: '',
+      toggled: false,
     }
   },
 
@@ -66,13 +103,62 @@ export default {
         this.currentSlide = slide.$attrs['data-slug']
       }
     },
+
+    close() {
+      this.toggled = false
+    },
+
+    open() {
+      this.toggled = true
+    },
+
+    toggle() {
+      this.toggled = !this.toggled
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
+@import "src/design/css/utils/all";
+
 .sidebar {
-  @apply h-screen w-64 fixed top-0 left-0 border-r border-white;
+  @apply
+    min-h-full
+    max-h-full
+    bg-black
+    fixed top-0 bottom-0
+    z-50
+    w-full
+
+    transform
+    -translate-x-full
+
+    transition-transform
+    duration-300
+    ease-in-out
+  ;
+
+  will-change: transform;
+
+  @include medium {
+    @apply
+      w-52
+      left-0
+      border-r border-white
+      translate-x-0;
+    ;
+  }
+
+  @include large {
+    @apply
+      w-64
+    ;
+  }
+
+  &.is-toggled {
+    @apply translate-x-0;
+  }
 }
 
 .open-to-work {
@@ -94,7 +180,8 @@ export default {
     bg-transparent
 
     text-left
-    text-2xl
+    text-xl
+    lg:text-2xl
     capitalize
     font-heading
     text-on-surface-subdued

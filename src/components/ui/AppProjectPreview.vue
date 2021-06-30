@@ -5,8 +5,8 @@
   >
     <div class="project-preview__cover-container">
       <div
-        class="project-preview__cover"
         v-lazy:background-image="require('@/assets/projects/' + data.thumbnail)"
+        class="project-preview__cover"
       />
     </div>
     <div class="project-preview__content">
@@ -15,7 +15,7 @@
           {{ data.title }}
           <span
             v-if="data.title_note"
-            class="text-sm"
+            class="text-sm text-on-surface-subdued"
           >
             {{ data.title_note }}<span class="text-pink">*</span>
           </span>
@@ -46,17 +46,12 @@
         *{{ data.title_note_desc }}
       </p>
 
-      <div class="mb-2 space-y-1 text-sm text-on-surface-subdued">
-        <div
-          v-for="(skills, index) in chunkedSkills"
-          :key="index"
-          class="flex items-center space-x-2"
-        >
-          <span
-            v-for="skill in skills"
-            :key="skill"
-          >{{ skill }}</span>
-        </div>
+      <div class="mb-2 space-y-1 flex items-center flex-wrap text-sm text-on-surface-subdued">
+        <span
+          v-for="skill in data.skills"
+          :key="skill"
+          class="inline-block mr-4"
+        >{{ skill }}</span>
       </div>
 
       <div v-if="data.links">
@@ -72,8 +67,6 @@
 </template>
 
 <script>
-import { chunk } from 'lodash'
-
 export default {
   props: {
     data: {
@@ -99,10 +92,6 @@ export default {
   },
 
   computed: {
-    chunkedSkills() {
-      return chunk(this.data.skills, 6)
-    },
-
     getBgColor() {
       const index = this.index % this.bgColors.length
       return `is-${this.bgColors[index]}`
@@ -113,7 +102,7 @@ export default {
 
 <style lang="scss" scoped>
 .project-preview {
-  @apply flex items-center space-x-12;
+  @apply md:flex space-y-12 md:space-y-0 md:space-x-12 items-center ;
 
   &.is-blue .project-preview__cover{
     @apply bg-blue;
@@ -129,7 +118,7 @@ export default {
 }
 
 .project-preview__cover-container {
-  @apply w-2/5;
+  @apply md:w-2/5;
 }
 
 .project-preview__cover {

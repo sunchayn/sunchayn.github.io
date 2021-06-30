@@ -1,6 +1,6 @@
 <template>
   <div class="app flex">
-    <div class="w-64">
+    <div class="md:w-52 lg:w-64">
       <TheSidebar
         ref="sidebar"
         @slideTo="slideTo"
@@ -8,7 +8,10 @@
     </div>
 
     <div class="app__wrapper flex-1">
-      <TheNavbar ref="navbar" />
+      <TheNavbar
+        ref="navbar"
+        @toggleSidebar="$refs.sidebar.toggle()"
+      />
 
       <div class="container max-w-5xl">
         <div class="app__content">
@@ -184,7 +187,7 @@ export default {
 
         {
           property: 'og:type',
-          content: "website",
+          content: 'website',
         },
       ],
     })
@@ -221,7 +224,8 @@ export default {
       const slide = i !== -1 ? this.slides[i] : null
 
       if (slide) {
-        // window.scrollTo(0, slide.$el.offsetTop + 5)
+        this.$refs.sidebar.close()
+
         slide.$el.scrollIntoView({
           behavior: 'smooth',
         })

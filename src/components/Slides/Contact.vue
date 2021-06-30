@@ -3,8 +3,10 @@
     <div class="app__slide__content">
       <div class="space-y-12">
         <div>
-          <span class="block mb-2">-- [&nbsp;<span class="inline-block w-4 text-center">{{ spinIndicator }}</span>&nbsp;] --</span>
-          <h2 class="leading-none mb-1 text-2xl">
+          <span class="block mb-2 sr-hook">
+            --[&nbsp;<span class="inline-block w-4 text-center">{{ spinIndicator }}</span>&nbsp;]--
+          </span>
+          <h2 class="leading-none mb-1 text-2xl sr-hook">
             Get in touch
           </h2>
           <p class="text-on-surface-subdued text-base mb-4 sr-hook">
@@ -16,28 +18,34 @@
           >Hello, Mazen!</a>
         </div>
 
-        <nav class="flex items-center space-x-4 sr-hook">
-          <a
-            href="https://www.linkedin.com/in/mazentouati/"
-            target="_blank"
-          >Linkedin</a>
-          <a
-            href="https://github.com/sunchayn"
-            target="_blank"
-          >Github</a>
-          <a
-            href="https://twitter.com/mazen_touati"
-            target="_blank"
-          >Twitter</a>
-          <span>/</span>
-          <a
-            href="https://www.facebook.com/mazyn.touati"
-            target="_blank"
-          >Facebook</a>
-          <a
-            href="https://www.instagram.com/zamengram/"
-            target="_blank"
-          >Instagram</a>
+        <nav class="md:flex items-center md:space-x-4 sr-hook">
+          <div class="flex items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/mazentouati/"
+              target="_blank"
+            >Linkedin</a>
+            <a
+              href="https://github.com/sunchayn"
+              target="_blank"
+            >Github</a>
+            <a
+              href="https://twitter.com/mazen_touati"
+              target="_blank"
+            >Twitter</a>
+          </div>
+
+          <span class="hidden md:inline">/</span>
+
+          <div class="flex items-center space-x-4">
+            <a
+              href="https://www.facebook.com/mazyn.touati"
+              target="_blank"
+            >Facebook</a>
+            <a
+              href="https://www.instagram.com/zamengram/"
+              target="_blank"
+            >Instagram</a>
+          </div>
         </nav>
 
         <div>
