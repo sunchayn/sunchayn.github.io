@@ -30,7 +30,7 @@ export default {
       strings: ['Full-stack web dev'],
       typeSpeed: 40,
       cursorChar: '_',
-      autoInsertCss: true,
+      autoInsertCss: false,
     })
   },
 

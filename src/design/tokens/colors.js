@@ -9,10 +9,10 @@ module.exports = {
     body: 'white',
     subdued: '#C9C9C9',
     inactive: '#9A9A9A',
-    dimmed: '#555555',
+    dimmed: '#7A7A7A',
   },
 
   surface: {
     background: 'black',
-  }
+  },
 }
