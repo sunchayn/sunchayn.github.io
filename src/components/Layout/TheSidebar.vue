@@ -57,10 +57,12 @@
         <span>[&nbsp;<a
           href="https://github.com/sunchayn"
           target="_blank"
+          rel="noopener"
         >github</a>&nbsp;]</span>
         <span>[&nbsp;<a
           href="https://dev.to/mazentouati"
           target="_blank"
+          rel="noopener"
         >blog</a>&nbsp;]</span>
       </div>
 
@@ -72,6 +74,8 @@
           src="@/assets/logo.svg"
           alt="logo"
           class="w-12"
+          width="48"
+          height="48"
         >
       </div>
     </div>

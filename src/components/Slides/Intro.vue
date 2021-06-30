@@ -15,6 +15,7 @@
       <a
         href="https://github.com/sunchayn/sunchayn.github.io/raw/master/public/static/Mazen%20Touati%20Résumé.pdf"
         class="button sr-hook"
+        rel="noopener"
       ><small class="text-xs lowercase"><i>pdf&nbsp;&mdash;&nbsp;</i></small>Resumé</a>
     </div>
   </div>
@@ -24,27 +25,17 @@
 import Typed from 'typed.js'
 
 export default {
-  // data() {
-  //   return {
-  //     visible: false,
-  //   }
-  // },
-
   mounted() {
-    // this.$timer = setInterval(() => {
-    //   this.visible = !this.visible
-    // }, 500)
-
     this.typed = new Typed(this.$refs.jobTitle, {
       strings: ['Full-stack web dev'],
       typeSpeed: 40,
       cursorChar: '_',
+      autoInsertCss: true,
     })
   },
 
   beforeUnmount() {
     this.typed.destroy()
-    // clearInterval(this.$timer)
   },
 }
 </script>

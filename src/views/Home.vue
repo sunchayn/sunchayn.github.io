@@ -83,13 +83,13 @@ export default {
         {
           key: 'image',
           name: 'image',
-          content: metaInformation.preview,
+          content: metaInformation.square_preview,
         },
 
         {
           key: 'thumbnail',
           name: 'thumbnail',
-          content: metaInformation.preview,
+          content: metaInformation.square_preview,
         },
 
         {
@@ -115,7 +115,7 @@ export default {
         },
         {
           itemprop: 'image',
-          content: metaInformation.preview,
+          content: metaInformation.square_preview,
         },
 
         // Twitter
@@ -146,15 +146,15 @@ export default {
 
         {
           name: 'twitter:image:src',
-          content: metaInformation.preview,
+          content: metaInformation.card_preview,
         },
 
         {
           name: 'twitter:image',
-          content: metaInformation.preview,
+          content: metaInformation.card_preview,
         },
 
-        // Open Graph general (Facebook, Pinterest & Google+)
+        // Open Graph general
         {
           property: 'og:title',
           content: metaInformation.title,
@@ -167,7 +167,7 @@ export default {
 
         {
           property: 'og:image',
-          content: metaInformation.preview,
+          content: metaInformation.card_preview,
         },
 
         {

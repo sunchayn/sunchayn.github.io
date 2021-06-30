@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "cross-env TAILWIND_MODE=watch vue-cli-service serve",
     "build": "vue-cli-service build && mv ./dist/404/index.html ./dist/404.html && rm -r ./dist/404",
+    "build-report": "vue-cli-service build --report",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -15,7 +16,6 @@
     "cross-env": "^7.0.3",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
-    "lodash": "^4.17.21",
     "prerender-spa-plugin": "^3.4.0",
     "scrollreveal": "^4.0.9",
     "smoothscroll-polyfill": "^0.4.4",

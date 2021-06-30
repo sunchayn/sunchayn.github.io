@@ -4,7 +4,8 @@
   "locale": "en_US",
   "author": "Mazen Touati",
   "description": "I'm a full-stack web developer who's enthusiastic about creating utility libraries for fellow developers. I enjoy building things using Laravel & VueJS.",
-  "preview": "https://sunchayn.github.io/preview.png",
+  "square_preview": "https://sunchayn.github.io/square_preview.png",
+  "card_preview": "https://sunchayn.github.io/card_preview.jpg",
   "twitter": {
     "handler": "@mazen_touati"
   }

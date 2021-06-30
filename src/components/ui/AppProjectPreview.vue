@@ -60,6 +60,7 @@
           :href="data.links.github"
           class="text-sm"
           target="_blank"
+          rel="noopener"
         >+ Github</a>
       </div>
     </div>

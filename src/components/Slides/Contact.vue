@@ -15,6 +15,7 @@
           <a
             href="mailto:mazen_touati@hotmail.com"
             class="button sr-hook"
+            rel="noopener"
           >Hello, Mazen!</a>
         </div>
 
@@ -23,27 +24,32 @@
             <a
               href="https://www.linkedin.com/in/mazentouati/"
               target="_blank"
+              rel="noopener"
             >Linkedin</a>
             <a
               href="https://github.com/sunchayn"
               target="_blank"
+              rel="noopener"
             >Github</a>
             <a
               href="https://twitter.com/mazen_touati"
               target="_blank"
+              rel="noopener"
             >Twitter</a>
           </div>
 
           <span class="hidden md:inline">/</span>
 
-          <div class="flex items-center space-x-4">
+          <div class="flex items-center mt-4 md:mt-0 space-x-4">
             <a
               href="https://www.facebook.com/mazyn.touati"
               target="_blank"
+              rel="noopener"
             >Facebook</a>
             <a
               href="https://www.instagram.com/zamengram/"
               target="_blank"
+              rel="noopener"
             >Instagram</a>
           </div>
         </nav>

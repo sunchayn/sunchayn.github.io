@@ -1,5 +1,15 @@
 body {
-  @apply text-left font-normal not-italic leading-normal font-body bg-surface-background text-on-surface-body;
+  @apply
+    text-left
+    font-normal
+    font-body
+    not-italic
+    text-on-surface-body
+    leading-normal
+
+    bg-surface-background
+  ;
+
   font-size: var(--typescales-mobile-base);
 
   @include large {

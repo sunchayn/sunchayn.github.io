@@ -3,6 +3,7 @@
     <div class="container max-w-5xl">
       <button
         class="md:hidden button button--icon"
+        aria-label="Open Menu"
         @click="$emit('toggleSidebar')"
       >
         <i class="icon text-current mr-0">
@@ -18,10 +19,12 @@
         <span>[&nbsp;<a
           href="https://github.com/sunchayn"
           target="_blank"
+          rel="noopener"
         >github</a>&nbsp;]</span>
         <span>[&nbsp;<a
           href="https://dev.to/mazentouati"
           target="_blank"
+          rel="noopener"
         >blog</a>&nbsp;]</span>
       </div>
     </div>

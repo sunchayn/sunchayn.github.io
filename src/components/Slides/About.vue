@@ -8,14 +8,14 @@
 
       <div class="md:flex">
         <div class="min-w-[40%] mb-4 md:mb-0 mr-4 lg:mr-0">
-          <div class="relative">
+          <div class="relative sr-hook">
             <div
               v-lazy:background-image="require('@/assets/headshot.jpg')"
-              class="z-10 bg-red aspect-w-4 aspect-h-5 w-full bg-cover bg-center sr-hook"
+              class="z-10 bg-red aspect-w-4 aspect-h-5 w-full bg-cover bg-center"
             />
 
             <div
-              class="about__circle sr-hook"
+              class="about__circle"
               :class="circleColorClass"
             />
           </div>

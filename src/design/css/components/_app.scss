@@ -1,5 +1,5 @@
 .app {
-  @apply min-h-screen max-h-screen max-w-full;
+  @apply max-w-full overflow-x-hidden;
 }
 
 .app__wrapper {
