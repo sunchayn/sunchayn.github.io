@@ -1,10 +1,10 @@
 {
-  "title": "Mazen Touati &mdash; Full-stack web developer",
+  "title": "Mazen Touati — Full-stack web developer",
   "url": "https://sunchayn.github.io",
   "locale": "en_US",
   "author": "Mazen Touati",
   "description": "I'm a full-stack web developer with a flexible mindset. I'm enthusiastic about creating utility libraries for fellow developers. I enjoy creating things using Laravel & VueJS.",
-  "preview": "https://sunchayn.github.io/public/static/preview.jpg",
+  "preview": "https://sunchayn.github.io/public/preview.jpg",
   "twitter": {
     "handler": "@mazen_touati"
   }
