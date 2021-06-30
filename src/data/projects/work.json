@@ -4,7 +4,7 @@
     "title": "Oriapi",
     "role": "Full-stack web developer",
     "company": "ALINAOUS",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis possimus! Fugit molestiae nam nemo nihil perferendis, qui suscipit? Accusantium alias dicta distinctio, exercitationem incidunt inventore iste laboriosam vel voluptatem.",
+    "description": "Oriapi is the backbone of Oribiky's bike rental service. I've worked on architecting and implementing a refactored version of the API that aims for performance and reliability while including many new features. My contribution has reduced the client's expenses and increased the overall performance.",
     "skills": [
       "Laravel",
       "Vonage",
@@ -20,7 +20,7 @@
     "title": "Oridash",
     "role": "Full-stack web developer",
     "company": "ALINAOUS",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis possimus! Fugit molestiae nam nemo nihil perferendis, qui suscipit? Accusantium alias dicta distinctio, exercitationem incidunt inventore iste laboriosam vel voluptatem.",
+    "description": "Oridash is a control panel for Oribiky's bike rental service. I've worked on building it with performance and interactivity in mind. The final result has presented the client with a rich experience and meaningful information.",
     "skills": [
       "Laravel",
       "VueJS",
