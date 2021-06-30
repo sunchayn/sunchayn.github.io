@@ -18,7 +18,7 @@
   {
     "id": 2,
     "title": "Received",
-    "description": "A platform that enable people to reserve a storage space and create a public gateway to receives files from their friends, co-worker or themselves.",
+    "description": "A platform that enables users to create a public gateway to receive files from their friends, co-workers, or themselves.",
     "skills": [
       "Laravel",
       "VueJS",
