@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/sunchayn/sunchayn.github.io/gh-pages/img/logo.3af295a5.svg)
 
-### The personal website of Mazen Touati V1
+### The personal website of Mazen Touati V2
 
 ------
 
