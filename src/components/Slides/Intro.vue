@@ -13,7 +13,7 @@
         An honest, innovative and minimalistic individual who enjoys talking to both computers and humans.
       </p>
       <a
-        href="https://sunchayn.github.io/Resume%20-%20Mazen%20Touati%20-%20Jun%202021.pdf"
+        href="https://sunchayn.github.io/Resume%20-%20Mazen%20Touati%20-%20June%202021.pdf"
         class="button sr-hook"
         rel="noopener"
       ><small class="text-xs lowercase"><i>pdf&nbsp;&mdash;&nbsp;</i></small>Resumé</a>
