@@ -6,6 +6,7 @@ import App from './App.vue'
 import router from './router'
 
 import './design/css/app.scss'
+import './console-quote'
 
 smoothscroll.polyfill()
 
