@@ -2,7 +2,7 @@
   <div class="app__slide">
     <div class="app__slide__content">
       <div class="space-y-12 mb-12">
-        <div class="mb-4 leading-none">
+        <div class="mb-4 leading-none sr-hook">
           <h2>Projects</h2>
           <span class="text-xs">Notable public projects I made at work</span>
         </div>
@@ -24,7 +24,7 @@
       </div>
 
       <div class="space-y-12">
-        <div class="mb-4 leading-none">
+        <div class="mb-4 leading-none sr-hook">
           <h2>Side Projects</h2>
           <span class="text-xs">some of the projects that I'm proud of</span>
         </div>
