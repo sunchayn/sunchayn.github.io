@@ -14,9 +14,10 @@
           <AppProjectPreview
             :index="index"
             :data="project"
+            class="sr-hook"
           />
 
-          <div class="text-4xl my-4">
+          <div class="text-4xl my-4 sr-hook">
             ***
           </div>
         </template>

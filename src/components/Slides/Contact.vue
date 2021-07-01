@@ -55,7 +55,7 @@
         </nav>
 
         <div>
-          <small class="text-on-surface-subdued sr-hook">Designed and developed by Mazen Touati @2021 – GNU GPLv3 License</small>
+          <small class="text-on-surface-subdued sr-hook leading-none">Designed and developed by Mazen Touati <span class="whitespace-nowrap">@2021&nbsp;–&nbsp;GNU&nbsp;GPLv3&nbsp;License</span></small>
         </div>
       </div>
     </div>
