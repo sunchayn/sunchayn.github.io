@@ -10,7 +10,7 @@
             Get in touch
           </h2>
           <p class="text-on-surface-subdued text-base mb-4 sr-hook">
-            Currently, I’m looking for a new opportunity abroad. I’m striving to develop my skillset and explore my potentials in a new challenging environment. Despite that, my inbox is always open for any type of inquiries or a friendly greeting.
+            Currently, I’m looking for a new opportunity abroad. I’m striving to develop my skillset and explore my potentials in a new challenging environment. Despite that, my inbox is always open for any type of inquiry or a friendly greeting.
           </p>
           <a
             href="mailto:mazen_touati@hotmail.com"
