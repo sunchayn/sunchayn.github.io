@@ -17,10 +17,11 @@
       </button>
     </div>
     <div class="flex-1 flex flex-col p-8">
-      <small
-        class="open-to-work capitalize cursor-pointer"
-        @click="$emit('slideTo', 'contact')"
-      >open to work</small>
+      <a
+        href="https://github.com/sunchayn/sunchayn.github.io"
+        target="_blank"
+        class="open-source text-sm capitalize cursor-pointer"
+      >open source</a>
 
       <nav class="sidebar__menu flex-1 overflow-y-auto">
         <button
@@ -165,7 +166,7 @@ export default {
   }
 }
 
-.open-to-work {
+.open-source {
   @apply relative left-0 transform rotate-180 select-none;
   writing-mode: vertical-rl;
 }
