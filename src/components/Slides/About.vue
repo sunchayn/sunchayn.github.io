@@ -26,9 +26,9 @@
         </div>
 
         <div class="relative z-10 text-on-surface-subdued">
-          <small class="block mb-1 sr-hook">40s Read time<br>&middot;</small>
+          <small class="block mb-1 sr-hook">41s Read time<br>&middot;</small>
           <p class="sr-hook">
-            Hi! I’m <strong class="text-white">Mazen Touati</strong>. I’m a backend web developer from Tunisia. My passion for code started years ago when I wrote my first line of code back in <strong class="text-white">2011</strong>.
+            Hi! I’m <strong class="text-white">Mazen Touati</strong>. I’m a backend software engineer from Tunisia, currently located in the Netherlands. My passion for code started years ago when I wrote my first line of code back in <strong class="text-white">2011</strong>.
           </p>
           <p class="sr-hook">
             I’ve acquired my Master’s degree in <strong class="text-white">Media Engineering</strong> in 2019. Two years earlier, I got my Bachelor’s Degree in <strong class="text-white">Computer Sciences</strong>.
