@@ -22,7 +22,7 @@ export default {
     content: {
       type: String,
       required: false,
-      default: 'Full Stack web developer',
+      default: 'Backend software engineer',
     },
   },
 

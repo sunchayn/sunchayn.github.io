@@ -26,18 +26,18 @@
         </div>
 
         <div class="relative z-10 text-on-surface-subdued">
-          <small class="block mb-1 sr-hook">36s Read time<br>&middot;</small>
+          <small class="block mb-1 sr-hook">40s Read time<br>&middot;</small>
           <p class="sr-hook">
-            Hi! I’m <strong class="text-white">Mazen Touati</strong>. I’m a full-stack web developer from Tunisia. My passion for code started years ago when I wrote my first line of code back in <strong class="text-white">2011</strong>.
+            Hi! I’m <strong class="text-white">Mazen Touati</strong>. I’m a backend web developer from Tunisia. My passion for code started years ago when I wrote my first line of code back in <strong class="text-white">2011</strong>.
           </p>
           <p class="sr-hook">
             I’ve acquired my Master’s degree in <strong class="text-white">Media Engineering</strong> in 2019. Two years earlier, I got my Bachelor’s Degree in <strong class="text-white">Computer Sciences</strong>.
           </p>
           <p class="sr-hook">
-            I’m enthusiastic about creating utility libraries for fellow developers. I enjoy creating things with <strong class="text-white">Laravel & VueJS</strong>.
+            I’m enthusiastic about innovation and building clean and maintainable software. I mainly craft things with <strong class="text-white">Laravel</strong>, however, I'm currently interested in learning Ruby On Rails and GoLang.
           </p>
           <p class="sr-hook">
-            I'm a sharer who is always delighted to exchange information. Recently, I've been more attached to sharing what I know through <strong class="text-white">blogging</strong>.
+            I'm a sharer who is always delighted to exchange information. Recently, I've been more attached to sharing what I know through <a href="https://medium.com/@sunchayn" class="text-white font-bold underline">blogging</a>.
           </p>
           <p class="sr-hook">
             When it comes to my philosophy, I believe in <strong class="text-white">authenticity</strong> and <strong class="text-white">self-worth</strong>. These views made me more involved in pushing my acquaintances and peers toward <strong class="text-white">growth</strong> through positive and practical <strong class="text-white">encouragement</strong>. Additionally, I'm always open to different <strong class="text-white">ideas</strong> and <strong class="text-white">approaches</strong>.

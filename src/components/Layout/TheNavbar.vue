@@ -25,7 +25,12 @@
           href="https://dev.to/mazentouati"
           target="_blank"
           rel="noopener"
-        >blog</a>&nbsp;]</span>
+        >dev.to</a>&nbsp;]</span>
+        <span>[&nbsp;<a
+          href="https://medium.com/@sunchayn"
+          target="_blank"
+          rel="noopener"
+        >medium</a>&nbsp;]</span>
       </div>
     </div>
   </nav>

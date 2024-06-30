@@ -37,25 +37,10 @@
               rel="noopener"
             >Twitter</a>
           </div>
-
-          <span class="hidden md:inline">/</span>
-
-          <div class="flex items-center mt-4 md:mt-0 space-x-4">
-            <a
-              href="https://www.facebook.com/mazyn.touati"
-              target="_blank"
-              rel="noopener"
-            >Facebook</a>
-            <a
-              href="https://www.instagram.com/zamengram/"
-              target="_blank"
-              rel="noopener"
-            >Instagram</a>
-          </div>
         </nav>
 
         <div>
-          <small class="text-on-surface-subdued sr-hook leading-none">Designed and developed by Mazen Touati <span class="whitespace-nowrap">@2021&nbsp;–&nbsp;GNU&nbsp;GPLv3&nbsp;License</span></small>
+          <small class="text-on-surface-subdued sr-hook leading-none">Designed and developed by Mazen Touati <span class="whitespace-nowrap">@2024&nbsp;–&nbsp;GNU&nbsp;GPLv3&nbsp;License</span></small>
         </div>
       </div>
     </div>

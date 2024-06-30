@@ -13,7 +13,7 @@
         An honest, innovative and minimalistic individual who enjoys talking to both computers and humans.
       </p>
       <a
-        href="https://sunchayn.github.io/resume---mazen-touati-june-2021.pdf"
+        href="https://sunchayn.github.io/resume--mazen-touati-june-2024.pdf"
         class="button sr-hook"
         rel="noopener"
       ><small class="text-xs lowercase"><i>pdf&nbsp;&mdash;&nbsp;</i></small>Resumé</a>
@@ -27,7 +27,7 @@ import Typed from 'typed.js'
 export default {
   mounted() {
     this.typed = new Typed(this.$refs.jobTitle, {
-      strings: ['Full-stack web dev'],
+      strings: ['Backend software engineer'],
       typeSpeed: 40,
       cursorChar: '_',
       autoInsertCss: false,
