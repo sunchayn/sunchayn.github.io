@@ -1,9 +1,0 @@
-@mixin size($w, $h: false) {
-  @if ($h) {  
-    width: $w;
-    height: $h;
-  } @else {
-    width: $w;
-    height: $w;
-  }
-}
