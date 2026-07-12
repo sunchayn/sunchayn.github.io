@@ -1,4 +1,0 @@
-Sitemap: https://sunchayn.github.io/sitemap.xml
-User-agent: *
-Disallow: /404.html
-Disallow: /resume--mazen-touati-june-2024.pdf
